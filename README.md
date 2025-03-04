@@ -15,7 +15,6 @@ This app is ideal for:
 ✔️ **Clipboard Copying** – Quickly copy note content with one click.  
 ✔️ **Metadata Sorting** – Notes are sorted **by date created (oldest first)**.  
 ✔️ **Self-Hosted** – No server required. Works **entirely in the browser**.  
-✔️ **GitHub Pages Support** – Can be hosted on **GitHub Pages** for video demonstrations.  
 
 ## 📂 Project Structure
 ```
