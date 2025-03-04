@@ -1,0 +1,91 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 250px; /* Fixed width */
+    min-width: 250px;
+    max-width: 250px;
+    background: #f4f4f4;
+    padding: 10px;
+    height: 100vh;
+    overflow-y: auto;
+    flex-shrink: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Ensures it stays in place */
+    left: 0;
+    top: 0;
+}
+
+/* Sidebar Folder Dropdown */
+.folder {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.folder-name {
+    display: inline-block;
+    padding: 5px;
+}
+
+.folder-name:hover {
+    background: #ddd;
+}
+
+/* Hidden sub-items */
+.hidden {
+    display: none;
+}
+
+/* Indent sub-items */
+ul ul {
+    margin-left: 15px;
+}
+
+/* Content */
+#content {
+    margin-left: 250px; /* Offset by sidebar width */
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Notes List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:hover {
+    background: #ddd;
+}
+
+/* Buttons */
+button {
+    margin-top: 10px;
+    padding: 7px 12px;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #0056b3;
+}
