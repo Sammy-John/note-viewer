@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const notesDir = path.join(__dirname, 'notes');
+const notesDir = path.join(__dirname,'..', 'notes');
 const outputFile = path.join(__dirname, 'app.html');
 
 function extractMetadata(content) {
