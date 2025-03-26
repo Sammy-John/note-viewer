@@ -18,17 +18,18 @@ This app is ideal for:
 
 ## 📂 Project Structure
 ```
-📦 Note-Viewer-App
- ┣ 📂 assets/              # Contains videos for GitHub Pages demo
+📦 note-viewer
+ ┣ 📂 assets/                # Contains videos for GitHub Pages demo
  ┣ 📂 src/
- ┃ ┣ 📜 app.html           # Open in Browser to view notes
- ┃ ┣ 📜 generate_app.js    # Script to generate the sidebar structure
- ┃ ┣ 📜 scripts.js         # Handles UI interactions
- ┃ ┣ 📜 styles.css         # App styling
- ┣ 📂 notes/               # (Ignored in GitHub) User-created notes go here
- ┣ 📜 index.html           # Github Pages site. 
- ┣ 📜 README.md            # Documentation
- ┣ 📜 .gitignore           # Ignores `notes/` to keep notes local
+ ┃ ┣ 📜 app.html             # Open in Browser to view notes
+ ┃ ┣ 📜 generate_app.js      # Script to generate the sidebar structure
+ ┃ ┣ 📜 scripts.js           # Handles UI interactions
+ ┃ ┣ 📜 styles.css           # App styling
+ ┣ 📂 notes/                 # (Ignored in GitHub) User-created notes go here
+ ┣ 📜 index.html             # Github Pages site. 
+ ┣ 📜 README.md              # Documentation
+ ┣ 📜 .gitignore             # Ignores `notes/` to keep notes local
+ ┣ 📜 .github-pages-setup.md # Instructions to host your app on github-pages 
 ```
 
 ## 🛠️ Setup Instructions
@@ -46,7 +47,7 @@ This app is ideal for:
    node src/generate_app.js
    ```
 4. **Open `app.html` in your browser** (no server required).
-5. 
+5. ➡️ [Want to host it on GitHub Pages? Follow these instructions.](github-pages-setup.md)
 
 ## 🎥 Demonstration Videos
 The functionality of the app is showcased [here](https://yourusername.github.io/Note-Viewer-App/videos.html).
