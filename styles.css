@@ -1,0 +1,187 @@
+/* Root Theme */
+:root {
+    --bg: #0c0e11;
+    --bg-alt: #161523;
+    --text: #f5f5f5;
+    --accent: #9f6ba1;
+    --accent-alt: #6f3a7c;
+    --card: #070b0b;
+    --shadow: rgba(0, 0, 0, 0.3);
+    --radius: 12px;
+    --highlight: #331f45;
+    --link: #163561;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 6rem 1rem 4rem;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(rgba(14, 14, 16, 0.6), rgba(14, 14, 16, 0.6)),
+      url('assets/background2.jpg') center/cover no-repeat;
+    background-blend-mode: overlay;
+    transform-origin: center;
+    animation: rotateTilt 5s ease-in-out infinite;
+    z-index: 0;
+  }
+  
+  .hero > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero .headline {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--accent);
+  }
+  
+  .hero .subtext {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 1.5rem auto;
+    opacity: 0.9;
+  }
+  
+  .cta-button {
+    background-color: var(--accent);
+    color: var(--bg);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--accent-alt);
+    transform: scale(1.05);
+  }
+  
+  /* Video Section */
+  .video-section {
+    background-color: var(--bg-alt);
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .video-placeholder {
+    background-color: var(--card);
+    border: 2px dashed var(--accent);
+    padding: 4rem 1rem;
+    border-radius: var(--radius);
+    margin-top: 2rem;
+  }
+  
+  /* Features & Tech Stack */
+  .features-section,
+  .tech-stack {
+    background-color: var(--bg);
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .features-list,
+  .tech-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    font-size: 1.05rem;
+    line-height: 2;
+  }
+  
+  /* Install Section */
+  .install-section {
+    background-color: var(--bg);
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .install-section pre {
+    background: var(--card);
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: var(--radius);
+    text-align: left;
+    box-shadow: 0 0 10px var(--shadow);
+    margin: 2rem auto;
+    max-width: 750px;
+  }
+  
+  .buttons .btn {
+    background-color: var(--accent);
+    color: var(--bg);
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--radius);
+    margin: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  
+  .buttons .btn.alt {
+    background-color: var(--accent-alt);
+  }
+  
+  .buttons .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px var(--shadow);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--bg-alt);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes rotateTilt {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .hero .headline {
+      font-size: 2rem;
+    }
+  
+    .cta-button, .buttons .btn {
+      width: 100%;
+      display: block;
+    }
+  }

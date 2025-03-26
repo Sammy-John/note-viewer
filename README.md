@@ -38,11 +38,17 @@ This app is ideal for:
    git clone https://github.com/Sammy-John/note-viewer.git
    cd Note-Viewer-App
    ```
+
+2. > **Prerequisite:**  
+   > Make sure you have **Node.js** installed.  
+   > 👉 [Download Node.js here](https://nodejs.org/)
+
+
 2. **Create a `notes/` directory** (this is ignored in GitHub):
    ```sh
    mkdir notes
    ```
-2. **Run the script to generate the index:**
+3. **Run the script to generate the index:**
    ```sh
    node src/generate_app.js
    ```

@@ -1,32 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Note Viewer - Demo Videos</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note Viewer App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="hero">
     <div class="container">
-        <h1>📽️ Note Viewer - Functionality Demo</h1>
-        
-        <h3>📂 Navigating Folders & Opening Notes</h3>
-        <video controls width="600">
-            <source src="assets/navigation.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <h3>📑 Copying Markdown Content</h3>
-        <video controls width="600">
-            <source src="assets/copy-content.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <h3>🛠️ Setting Up the App</h3>
-        <video controls width="600">
-            <source src="assets/setup.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+      <h1 class="headline">Note Viewer App</h1>
+      <p class="subtext">
+        A self-hosted, offline markdown viewer built to replace bloated note apps.  
+        I built it after Evernote’s free plan limited me to 50 notes — I needed a lightweight, portable system for study notes, project docs, and technical references.
+      </p>
+      <a href="#demo" class="cta-button">Watch Demo</a>
     </div>
+  </header>
+
+  <section class="video-section" id="demo">
+    <div class="container">
+      <h2>Watch the App in Action</h2>
+      <div class="video-placeholder">
+        <p>[ Video Placeholder — Embed YouTube or GitHub Pages video ]</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="container">
+      <h2>🔧 Features</h2>
+      <ul class="features-list">
+        <li>🗂️ Dynamic folder-based sidebar</li>
+        <li>📄 Markdown rendering with clipboard copy</li>
+        <li>📅 Metadata support and date-based sorting</li>
+        <li>🛠️ Fully offline and self-hosted</li>
+        <li>💻 No server required — just open in browser</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="tech-stack">
+    <div class="container">
+      <h2>🧰 Tech Stack</h2>
+      <ul class="tech-list">
+        <li>HTML / CSS / JavaScript</li>
+        <li>Node.js (for generating the HTML structure)</li>
+        <li>Marked.js (Markdown parsing)</li>
+        <li>Vanilla JS for UI + clipboard</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="install-section">
+    <div class="container">
+      <h2>Get Started</h2>
+      <p>Clone the repository and run it locally in minutes.</p>
+      <pre><code>git clone https://github.com/yourusername/note-viewer.git
+cd note-viewer
+node src/generate_app.js
+open index.html</code></pre>
+      <div class="buttons">
+        <a href="https://github.com/yourusername/note-viewer" class="btn">View on GitHub</a>
+        <a href="#" class="btn alt">Download</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made by Your Name  · MIT License</p>
+  </footer>
 </body>
 </html>
