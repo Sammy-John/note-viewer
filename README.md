@@ -21,11 +21,12 @@ This app is ideal for:
 📦 Note-Viewer-App
  ┣ 📂 assets/              # Contains videos for GitHub Pages demo
  ┣ 📂 src/
- ┃ ┣ 📜 generate_index.js  # Script to generate the sidebar structure
+ ┃ ┣ 📜 app.html           # Open in Browser to view notes
+ ┃ ┣ 📜 generate_app.js    # Script to generate the sidebar structure
  ┃ ┣ 📜 scripts.js         # Handles UI interactions
  ┃ ┣ 📜 styles.css         # App styling
  ┣ 📂 notes/               # (Ignored in GitHub) User-created notes go here
- ┣ 📜 index.html           # Main app page
+ ┣ 📜 index.html           # Github Pages site. 
  ┣ 📜 README.md            # Documentation
  ┣ 📜 .gitignore           # Ignores `notes/` to keep notes local
 ```
@@ -33,18 +34,19 @@ This app is ideal for:
 ## 🛠️ Setup Instructions
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/yourusername/Note-Viewer-App.git
+   git clone https://github.com/Sammy-John/note-viewer.git
    cd Note-Viewer-App
    ```
 2. **Create a `notes/` directory** (this is ignored in GitHub):
    ```sh
    mkdir notes
    ```
-3. **Run the script to generate the index:**
+2. **Run the script to generate the index:**
    ```sh
-   node src/generate_index.js
+   node src/generate_app.js
    ```
-4. **Open `index.html` in your browser** (no server required).
+4. **Open `app.html` in your browser** (no server required).
+5. 
 
 ## 🎥 Demonstration Videos
 The functionality of the app is showcased [here](https://yourusername.github.io/Note-Viewer-App/videos.html).
