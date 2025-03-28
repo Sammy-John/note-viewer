@@ -3,6 +3,9 @@
 ## 📌 Overview
 The **Note Viewer App** is a lightweight, self-hosted Markdown viewer that allows users to organize and browse `.md` files in a structured sidebar. Users can navigate folders, view notes in a dynamic content panel, and copy content to the clipboard for easy reference.
 
+See [here](https://sammy-john.github.io/note-viewer/)
+
+
 This app is ideal for:
 - Developers managing **cheat sheets** and **reference notes**.
 - Technical writers looking for a **structured way** to access documentation.
@@ -55,8 +58,8 @@ This app is ideal for:
 4. **Open `app.html` in your browser** (no server required).
 5. ➡️ [Want to host it on GitHub Pages? Follow these instructions.](github-pages-setup.md)
 
-## 🎥 Demonstration Videos
-The functionality of the app is showcased [here](https://yourusername.github.io/Note-Viewer-App/videos.html).
+## 🎥 Demonstration
+The functionality of the app is showcased [here](https://sammy-john.github.io/note-viewer/).
 
 ## 📝 License
 This project is licensed under the **MIT License** – see the [`LICENSE`](LICENSE) file for details.
