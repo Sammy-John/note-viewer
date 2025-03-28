@@ -62,7 +62,7 @@
     inset: 0;
     background:
       linear-gradient(rgba(14, 14, 16, 0.6), rgba(14, 14, 16, 0.6)),
-      url('assets/background2.jpg') center/cover no-repeat;
+      url('assets/site-images/background2.jpg') center/cover no-repeat;
     background-blend-mode: overlay;
     transform-origin: center;
     animation: rotateTilt 5s ease-in-out infinite;
@@ -230,7 +230,7 @@
   .features-section {
     background:
       linear-gradient(rgba(14, 14, 16, 0.6), rgba(14, 14, 16, 0.6)),
-      url('assets/background3.webp') center/cover no-repeat;
+      url('assets/site-images/background3.webp') center/cover no-repeat;
   }
   
   .features-grid {
@@ -387,7 +387,7 @@
   .install-section {
     background:
       linear-gradient(rgba(14, 14, 16, 0.6), rgba(14, 14, 16, 0.6)),
-      url('assets/background4.png') center/cover no-repeat;
+      url('assets/site-images/background4.png') center/cover no-repeat;
     padding: 4rem 1rem;
     text-align: center;
   }

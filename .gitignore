@@ -134,3 +134,4 @@ notes/
 to-do-list/
 assets/*
 !assets/.gitkeep
+!assets/site-images
