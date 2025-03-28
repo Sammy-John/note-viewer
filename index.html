@@ -8,75 +8,178 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <div class="container hero-content">
-          <div class="hero-image">
-            <img src="assets/note-viewer-snip.webp" alt="Note Viewer App Preview" />
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-image">
+        <div class="browser-frame">
+          <div class="browser-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
           </div>
-          <div class="hero-text">
-            <h1 class="headline">Note Viewer App</h1>
-            <p class="tagline">Lightweight, Offline Markdown Viewer</p>
-            <p class="subtext">
-              A self-hosted, offline markdown viewer built to replace bloated note apps.  
-              I built it after Evernote’s free plan limited me to 50 notes — I needed a lightweight, portable system for study notes, project docs, and technical references.
-            </p>
-            <a href="#demo" class="cta-button">Watch Demo</a>
-          </div>
+          <img src="assets/note-viewer-snip.webp" alt="Note Viewer App Preview" />
         </div>
-      </header>
-      
-
-  <section class="video-section" id="demo">
-    <div class="container">
-      <h2>Watch the App in Action</h2>
-      <div class="video-placeholder">
-        <p>[ Video Placeholder — Embed YouTube or GitHub Pages video ]</p>
+      </div>
+      <div class="hero-text">
+        <h1 class="headline">Note Viewer App</h1>
+        <p class="tagline">Lightweight, Offline Markdown Viewer</p>
+        <p class="subtext">
+          A self-hosted, offline markdown viewer built to replace bloated note apps.
+        </p>
+        <a href="#features-section" class="cta-button">Check out Features</a>
       </div>
     </div>
-  </section>
+  </header>
+  
 
-  <section class="features-section">
+  <section class="features-section" id="features-section">
     <div class="container">
       <h2>🔧 Features</h2>
-      <ul class="features-list">
-        <li>🗂️ Dynamic folder-based sidebar</li>
-        <li>📄 Markdown rendering with clipboard copy</li>
-        <li>📅 Metadata support and date-based sorting</li>
-        <li>🛠️ Fully offline and self-hosted</li>
-        <li>💻 No server required — just open in browser</li>
+  
+      <!-- Desktop Card Layout -->
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="icon">🗂️</div>
+          <h3>Structured Sidebar</h3>
+          <p>Navigate folders and notes in a collapsible, multi-level layout.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="icon">📄</div>
+          <h3>Markdown Support</h3>
+          <p>Render and copy Markdown notes with full formatting.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="icon">📅</div>
+          <h3>Metadata Sorting</h3>
+          <p>Sort notes by date automatically using frontmatter.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="icon">🛠️</div>
+          <h3>Offline & Self-Hosted</h3>
+          <p>Works entirely in the browser with no backend.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="icon">💻</div>
+          <h3>Zero Dependencies</h3>
+          <p>Just open the HTML — no build step or server required.</p>
+        </div>
+      </div>
+  
+      <!-- Mobile Bullet Layout -->
+      <ul class="features-bullets">
+        <li class="fade-in">🗂️ Structured Sidebar</li>
+        <li class="fade-in">📄 Markdown Support</li>
+        <li class="fade-in">📅 Metadata Sorting</li>
+        <li class="fade-in">🛠️ Offline & Self-Hosted</li>
+        <li class="fade-in">💻 Zero Dependencies</li>
       </ul>
     </div>
   </section>
-
   <section class="tech-stack">
     <div class="container">
       <h2>🧰 Tech Stack</h2>
-      <ul class="tech-list">
-        <li>HTML / CSS / JavaScript</li>
-        <li>Node.js (for generating the HTML structure)</li>
-        <li>Marked.js (Markdown parsing)</li>
-        <li>Vanilla JS for UI + clipboard</li>
-      </ul>
+      <div class="tech-buttons">
+        <button class="tech-button" data-tech="html">💻 HTML, CSS, JS</button>
+        <button class="tech-button" data-tech="node">🟢 Node.js</button>
+        <button class="tech-button" data-tech="marked">📝 Marked.js</button>
+        <button class="tech-button" data-tech="clipboard">📋 Clipboard API</button>
+      </div>
     </div>
   </section>
+  
+  <!-- Modal -->
+  <div id="tech-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modal-title">Tech Title</h3>
+      <p id="modal-description">Tech description will go here dynamically.</p>
+    </div>
+  </div>
+  
 
   <section class="install-section">
     <div class="container">
       <h2>Get Started</h2>
       <p>Clone the repository and run it locally in minutes.</p>
-      <pre><code>git clone https://github.com/yourusername/note-viewer.git
-cd note-viewer
-node src/generate_app.js
-open index.html</code></pre>
+      <!-- Commented out till fix pre and code in mobile view
+      <pre><code>
+        git clone https://github.com/yourusername/note-viewer.git
+        cd note-viewer
+        node src/generate_app.js
+        open index.html
+      </code></pre>
+      -->
       <div class="buttons">
-        <a href="https://github.com/yourusername/note-viewer" class="btn">View on GitHub</a>
-        <a href="#" class="btn alt">Download</a>
+        <a href="https://github.com/Sammy-John/note-viewer" class="btn">Find on GitHub</a>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <p>Made by Your Name  · MIT License</p>
+    <p>
+      Made by <a href="https://sammyjohnrawlinson.teknabu.com/portfolio/" target="_blank" rel="noopener">Sammy John Rawlinson</a> · MIT License
+    </p>
+    <p class="disclaimer">
+      Background images courtesy of <a href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener">pawel_czerwinski</a>
+    </p>
   </footer>
+  
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target); // Only animate once
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+  <script>
+    const techDescriptions = {
+      html: {
+        title: "HTML, CSS, JS",
+        desc: "The foundation for structure, styling, and client-side interactivity in the browser."
+      },
+      node: {
+        title: "Node.js",
+        desc: "Used to scan your notes and generate a static HTML site that runs offline."
+      },
+      marked: {
+        title: "Marked.js",
+        desc: "Parses your markdown notes into styled HTML within the browser."
+      },
+      clipboard: {
+        title: "Clipboard API",
+        desc: "Allows users to quickly copy note content to their clipboard with one click."
+      }
+    };
+  
+    const modal = document.getElementById("tech-modal");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDesc = document.getElementById("modal-description");
+    const closeBtn = modal.querySelector(".close");
+  
+    document.querySelectorAll(".tech-button").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const key = btn.dataset.tech;
+        modalTitle.textContent = techDescriptions[key].title;
+        modalDesc.textContent = techDescriptions[key].desc;
+        modal.classList.add("visible");
+      });
+    });
+  
+    closeBtn.addEventListener("click", () => modal.classList.remove("visible"));
+    modal.addEventListener("click", e => {
+      if (e.target === modal) modal.classList.remove("visible");
+    });
+  </script>
+  
+  
 </body>
 </html>
